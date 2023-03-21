@@ -19,6 +19,7 @@ Author URL: http://w3layouts.com
 
     <!-- Template CSS Style link -->
     <link rel="stylesheet" href="assets/css/style-liberty.css">
+    <link rel="manifest" href="manifest.json">
 
 </head>
 
@@ -583,6 +584,15 @@ Author URL: http://w3layouts.com
 
 
 <!-- Js scripts -->
+
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/worker-service.js')
+      });
+    }
+    </script>
+
 <!-- move top -->
 <button onclick="topFunction()" id="movetop" title="Go to top">
     <span class="fas fa-level-up-alt" aria-hidden="true"></span>
