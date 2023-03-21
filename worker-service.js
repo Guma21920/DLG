@@ -1,8 +1,7 @@
 const CACHE_NAME = 'dlg-cache';
 
 const urlsToCache = [
-  '/',
-  '/index.html',
+  'index.html',
   'assets/css/style-liberty.css'
 ];
 
